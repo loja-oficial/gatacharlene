@@ -1,0 +1,35 @@
+/*
+ * ARQUIVO DE CUSTOMIZAÇÃO (Módulo 12)
+ *
+ * Este arquivo é carregado DEPOIS do Bootstrap
+ * para sobrescrever as regras padrão.
+ */
+
+/* --- 1. Customização de Cores --- */
+
+/* Define uma cor primária personalizada (ex: um tom de roxo) */
+:root {
+--cor-primaria: #c26fda;
+--cor-primaria-hover: #9b56ae;
+}
+body {
+font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.btn-primary {
+background-color: var(--cor-primaria);
+border-color: var(--cor-primaria);
+}
+.btn-primary:hover {
+background-color: var(--cor-primaria-hover);
+border-color: var(--cor-primaria-hover);
+}
+html {
+scroll-padding-top: 70px;
+}
+.card {
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.2s;
+}
+.card:hover {
+transform: translateY(-5px);
+}
